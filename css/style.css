@@ -1,0 +1,77 @@
+.back-all {
+  background-color: rgb(59, 59, 59)
+}
+
+.card-body{ 
+  background: rgb(0, 0, 0);
+
+  
+}
+
+.article-img {
+  display: inline;
+}
+.container-img img { 
+
+  width: 100%;
+  height: 200px;
+
+}
+
+.alert.alert-primary .logo_top{
+  width: 100px;
+  right: 500px;
+}
+
+
+.container-img  { 
+
+  flex-wrap: wrap ;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+
+ #DescriçãoTitulo, #DescriçãoIngredientes ,#DescriçãodoValorpProduto, #DescriçãoProduto {
+  color: white;
+}
+
+
+
+
+.body{
+  margin:0;
+  background: blueviolet;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:rgb(59, 59, 59);
+    color:white;
+    text-align: right;
+  }
+
+  .card {
+    background-color: #141414;
+    border: none;
+    padding: 10px;
+    align-items: center;
+}
+
+.navbar.navbar{
+  flex-wrap: wrap ;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  
+
+
+
+}
+
+
+
