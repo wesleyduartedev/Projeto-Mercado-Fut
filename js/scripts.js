@@ -80,7 +80,7 @@ class ProdutoNoCarrinho {
         this.preco = preco
         this.quantidade = quantidade
     }
-   ProdutoNoCarrinho =getElementById("todosOsProdutos")
+   
 
 }
 
