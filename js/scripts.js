@@ -3,71 +3,71 @@
     * Copyright 2013-2020 Start Bootstrap
     * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-freelancer/blob/master/LICENSE)
     */
-    (function($) {
+(function ($) {
     "use strict"; // Start of use strict
-  
+
     // Smooth scrolling using jQuery easing
-    $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
-      if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-        var target = $(this.hash);
-        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-        if (target.length) {
-          $('html, body').animate({
-            scrollTop: (target.offset().top - 71)
-          }, 1000, "easeInOutExpo");
-          return false;
+    $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function () {
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+            if (target.length) {
+                $('html, body').animate({
+                    scrollTop: (target.offset().top - 71)
+                }, 1000, "easeInOutExpo");
+                return false;
+            }
         }
-      }
     });
-  
+
     // Scroll to top button appear
-    $(document).scroll(function() {
-      var scrollDistance = $(this).scrollTop();
-      if (scrollDistance > 100) {
-        $('.scroll-to-top').fadeIn();
-      } else {
-        $('.scroll-to-top').fadeOut();
-      }
+    $(document).scroll(function () {
+        var scrollDistance = $(this).scrollTop();
+        if (scrollDistance > 100) {
+            $('.scroll-to-top').fadeIn();
+        } else {
+            $('.scroll-to-top').fadeOut();
+        }
     });
-  
+
     // Closes responsive menu when a scroll trigger link is clicked
-    $('.js-scroll-trigger').click(function() {
-      $('.navbar-collapse').collapse('hide');
+    $('.js-scroll-trigger').click(function () {
+        $('.navbar-collapse').collapse('hide');
     });
-  
+
     // Activate scrollspy to add active class to navbar items on scroll
     $('body').scrollspy({
-      target: '#mainNav',
-      offset: 80
+        target: '#mainNav',
+        offset: 80
     });
-  
+
     // Collapse Navbar
-    var navbarCollapse = function() {
-      if ($("#mainNav").offset().top > 100) {
-        $("#mainNav").addClass("navbar-shrink");
-      } else {
-        $("#mainNav").removeClass("navbar-shrink");
-      }
+    var navbarCollapse = function () {
+        if ($("#mainNav").offset().top > 100) {
+            $("#mainNav").addClass("navbar-shrink");
+        } else {
+            $("#mainNav").removeClass("navbar-shrink");
+        }
     };
     // Collapse now if page is not at top
     navbarCollapse();
     // Collapse the navbar when page is scrolled
     $(window).scroll(navbarCollapse);
-  
-    // Floating label headings for the contact form
-    $(function() {
-      $("body").on("input propertychange", ".floating-label-form-group", function(e) {
-        $(this).toggleClass("floating-label-form-group-with-value", !!$(e.target).val());
-      }).on("focus", ".floating-label-form-group", function() {
-        $(this).addClass("floating-label-form-group-with-focus");
-      }).on("blur", ".floating-label-form-group", function() {
-        $(this).removeClass("floating-label-form-group-with-focus");
-      });
-    });
-  
-  })(jQuery); // End of use strict
 
-  
+    // Floating label headings for the contact form
+    $(function () {
+        $("body").on("input propertychange", ".floating-label-form-group", function (e) {
+            $(this).toggleClass("floating-label-form-group-with-value", !!$(e.target).val());
+        }).on("focus", ".floating-label-form-group", function () {
+            $(this).addClass("floating-label-form-group-with-focus");
+        }).on("blur", ".floating-label-form-group", function () {
+            $(this).removeClass("floating-label-form-group-with-focus");
+        });
+    });
+
+})(jQuery); // End of use strict
+
+
 
 // Implementações de Imput-->
 
@@ -80,7 +80,7 @@ class ProdutoNoCarrinho {
         this.preco = preco
         this.quantidade = quantidade
     }
-   
+
 
 }
 
@@ -127,242 +127,301 @@ function clicarComprarProduto(idDoCampoPreco, idDoCampoQuantidade, nomeDoProduto
     colocarProdutoNoCarrinho(nomeDoProduto, valorDoProduto, quantidadeDoProduto)
 }
 
-function pegarvalordoElementobyIdClick(){
+function pegarvalordoElementobyIdClick() {
 
-     let  =document.getElementById(``);
-     let  =document.getElementById(``);
-     let  =document.getElementById(``);
-     let  =document.getElementById(``);
-     let  =document.getElementById(``);
-     let  =document.getElementById(``);
-     let  =document.getElementById(``);
-     let  =document.getElementById(``);
-     //clickXsalada,clickCamisaSaopaulo,clickXbacon,clickXegg,clickXfrango,clickXcostela,clickXdog
+    let = document.getElementById(``);
+    let = document.getElementById(``);
+    let = document.getElementById(``);
+    let = document.getElementById(``);
+    let = document.getElementById(``);
+    let = document.getElementById(``);
+    let = document.getElementById(``);
+    let = document.getElementById(``);
+    //clickXsalada,clickCamisaSaopaulo,clickXbacon,clickXegg,clickXfrango,clickXcostela,clickXdog
 }
 
-function pegarvalorElementobyIDPreco(){
-    let temOprecoDoXsalada = document.getElementById(`precoXsalada`);
-   
-}
-function mostrarCarrinho(){
-  for (let i = 0; i < carrinho.length; i++) {
-     let produtodocarrinho = carrinho[i]
-     console.log(produtodocarrinho);
-     produtodocarrinho = getElementById("todosOsProdutos")
-}
-  
-
-
+function pegarvalorElementobyIDPreco() {
+    let temOprecoDoXsalada = document.getElementById(``);
 
 }
- 
+function mostrarCarrinho() {
+    for (let i = 0; i < carrinho.length; i++) {
+        let produtodocarrinho = carrinho[i]
+        console.log(produtodocarrinho);
+        produtodocarrinho = getElementById("todosOsProdutos")
+        let todosOsProdutos = document.getElementById("todosOsProdutos")
+        todosOsProdutos = mostrarCarrinho("Todos os seus produtos: ");
+
+    }
+
+
+}
+function MostrarProdutos(){
+    let divtodosOsProdutos = document.getElementById("id");
+    
+}
+
 
 window.onload = function () {
+    function Camisa() {
+        document.getElementById(`comprarCamisaCorinthians`).addEventListener('click', () => {
 
-    document.getElementById(`comprarCamisaCorinthians`).addEventListener('click', () => {
+            let temOprecoDoCamisaCorinthians = document.getElementById(`precoCamisaCorinthians`);
+            let valorPrecoXaslada = temOprecoDoCamisaCorinthians.value
 
-        let temOprecoDoCamisaCorinthians = document.getElementById(`precoCamisaCorinthians`);
-        let valorPrecoXaslada = temOprecoDoCamisaCorinthians.value
+            let quantidadeCamisaCorinthians = document.getElementById(`quantidadeCamisaCorinthians`).value
 
-        let quantidadeCamisaCorinthians = document.getElementById(`quantidadeCamisaCorinthians`).value
+            if (quantidadeCamisaCorinthians !== "") {
+                let valorTotalXasala = valorPrecoXaslada * quantidadeCamisaCorinthians
 
-        if (quantidadeCamisaCorinthians !== "") {
-            let valorTotalXasala = valorPrecoXaslada * quantidadeCamisaCorinthians
+                alert("Sua quantidade de Camisa do Corinthians $: " + valorTotalXasala)
 
-            alert("Sua quantidade de Camisa do Corinthians $: " + valorTotalXasala)
+            } else {
+                alert(`Selecione uma quantidade para efetuar a compra`)
+            }
+            let idDoCampoPreco = "precoCamisaCorinthians"
+            let idDoCampoQuantidade = "quantidadeCamisaCorinthians"
+            let nomeDoProduto = "Camisa Corinthians"
+            clicarComprarProduto(idDoCampoPreco, idDoCampoQuantidade, nomeDoProduto)
 
-        } else {
-            alert(`Selecione uma quantidade para efetuar a compra`)
-        }
-        let idDoCampoPreco = "precoCamisaCorinthians"
-        let idDoCampoQuantidade = "quantidadeCamisaCorinthians"
-        let nomeDoProduto = "Camisa Corinthians"
-        clicarComprarProduto(idDoCampoPreco, idDoCampoQuantidade, nomeDoProduto)
+        })
+        document.getElementById(`comprarCamisaSaopaulo`).addEventListener('click', () => {
 
-    })
-    document.getElementById(`comprarCamisaSaopaulo`).addEventListener('click', () => {
+            let temOprecoDoCamisaSaopaulo = document.getElementById(`precoCamisaSaopaulo`);
+            let valorPrecoCamisaSaopaulo = temOprecoDoCamisaSaopaulo.value
 
-        let temOprecoDoCamisaSaopaulo = document.getElementById(`precoCamisaSaopaulo`);
-        let valorPrecoCamisaSaopaulo = temOprecoDoCamisaSaopaulo.value
+            let quantidadeCamisaSaopaulo = document.getElementById(`quantidadeCamisaSaopaulo`).value
 
-        let quantidadeCamisaSaopaulo = document.getElementById(`quantidadeCamisaSaopaulo`).value
+            if (quantidadeCamisaSaopaulo !== "") {
+                let valorTotalCamisaSaopaulo = valorPrecoCamisaSaopaulo * quantidadeCamisaSaopaulo
 
-        if (quantidadeCamisaSaopaulo !== "") {
-            let valorTotalCamisaSaopaulo = valorPrecoCamisaSaopaulo * quantidadeCamisaSaopaulo
+                alert("Sua quantidade de camisas do São Paulo é $: " + valorTotalCamisaSaopaulo)
 
-            alert("Sua quantidade de camisas do São Paulo é $: " + valorTotalCamisaSaopaulo)
+            } else {
+                alert(`Selecione uma quantidade para efetuar a compra`)
+            }
+            let idDoCampoPreco = "precoCamisaSaopaulo"
+            let idDoCampoQuantidade = "quantidadeCamisaSaopaulo"
+            let nomeDoProduto = "Camisa São Paulo"
+            clicarComprarProduto(idDoCampoPreco, idDoCampoQuantidade, nomeDoProduto)
 
-        } else {
-            alert(`Selecione uma quantidade para efetuar a compra`)
-        }
-        let idDoCampoPreco = "precoCamisaSaopaulo"
-        let idDoCampoQuantidade = "quantidadeCamisaSaopaulo"
-        let nomeDoProduto = "Camisa São Paulo"
-        clicarComprarProduto(idDoCampoPreco, idDoCampoQuantidade, nomeDoProduto)
+        })
+        document.getElementById(`comprarCamisaSantos`).addEventListener('click', () => {
 
-    })
-    document.getElementById(`comprarCamisaSantos`).addEventListener('click', () => {
+            let temOprecoDoCamisaSantos = document.getElementById(`precoCamisaSantos`);
+            let valorPrecoCamisaSantos = temOprecoDoCamisaSantos.value
 
-        let temOprecoDoCamisaSantos = document.getElementById(`precoCamisaSantos`);
-        let valorPrecoCamisaSantos = temOprecoDoCamisaSantos.value
+            let quantidadeCamisaSantos = document.getElementById(`quantidadeCamisaSantos`).value
 
-        let quantidadeCamisaSantos = document.getElementById(`quantidadeCamisaSantos`).value
+            if (quantidadeCamisaSantos !== "") {
+                let valorTotalCamisaSantos = valorPrecoCamisaSantos * quantidadeCamisaSantos
 
-        if (quantidadeCamisaSantos !== "") {
-            let valorTotalCamisaSantos = valorPrecoCamisaSantos * quantidadeCamisaSantos
+                alert("Sua quantidade de camisa do Santos é $: " + valorTotalCamisaSantos)
 
-            alert("Sua quantidade de camisa do Santos é $: " + valorTotalCamisaSantos)
+            } else {
+                alert(`Selecione uma quantidade para efetuar a compra`)
+            }
 
-        } else {
-            alert(`Selecione uma quantidade para efetuar a compra`)
-        }
+            let idDoCampoPreco = "precoCamisaSantos"
+            let idDoCampoQuantidade = "quantidadeCamisaSantos"
+            let nomeDoProduto = "Camisa São Paulo"
+            clicarComprarProduto(idDoCampoPreco, idDoCampoQuantidade, nomeDoProduto)
 
-        let idDoCampoPreco = "precoCamisaSantos"
-        let idDoCampoQuantidade = "quantidadeCamisaSantos"
-        let nomeDoProduto = "Camisa São Paulo"
-        clicarComprarProduto(idDoCampoPreco, idDoCampoQuantidade, nomeDoProduto)
 
+        })
+        document.getElementById(`comprarCamisaPalmeiras`).addEventListener('click', () => {
 
-    })
-    document.getElementById(`comprarCamisaPalmeiras`).addEventListener('click', () => {
+            let temOprecoDoCamisaPalmeiras = document.getElementById(`precoCamisaPalmeiras`);
+            let valorPrecoCamisaPalmeiras = temOprecoDoCamisaPalmeiras.value
 
-        let temOprecoDoCamisaPalmeiras = document.getElementById(`precoCamisaPalmeiras`);
-        let valorPrecoCamisaPalmeiras = temOprecoDoCamisaPalmeiras.value
+            let quantidadeCamisaPalmeiras = document.getElementById(`quantidadeCamisaPalmeiras`).value
 
-        let quantidadeCamisaPalmeiras = document.getElementById(`quantidadeCamisaPalmeiras`).value
+            if (quantidadeCamisaPalmeiras !== "") {
+                let valorTotalCamisaPalmeiras = valorPrecoCamisaPalmeiras * quantidadeCamisaPalmeiras
 
-        if (quantidadeCamisaPalmeiras !== "") {
-            let valorTotalCamisaPalmeiras = valorPrecoCamisaPalmeiras * quantidadeCamisaPalmeiras
+                alert("Sua quantidade de camisa do Palmeiras é $: " + valorTotalCamisaPalmeiras)
 
-            alert("Sua quantidade de camisa do Palmeiras é $: " + valorTotalCamisaPalmeiras)
+            } else {
+                alert(`Selecione uma quantidade para efetuar a compra`)
+            }
 
-        } else {
-            alert(`Selecione uma quantidade para efetuar a compra`)
-        }
+            let idDoCampoPreco = "precoCamisaPalmeiras"
+            let idDoCampoQuantidade = "quantidadeCamisaPalmeiras"
+            let nomeDoProduto = "Camisa Palmeiras"
+            clicarComprarProduto(idDoCampoPreco, idDoCampoQuantidade, nomeDoProduto)
 
-        let idDoCampoPreco = "precoCamisaPalmeiras"
-        let idDoCampoQuantidade = "quantidadeCamisaPalmeiras"
-        let nomeDoProduto = "Camisa Palmeiras"
-        clicarComprarProduto(idDoCampoPreco, idDoCampoQuantidade, nomeDoProduto)
 
+        })
+        document.getElementById(`comprarCamisaBrasil`).addEventListener('click', () => {
 
-    })
-    document.getElementById(`comprarCamisaBrasil`).addEventListener('click', () => {
+            let temOprecoDoCamisaBrasil = document.getElementById(`precoCamisaBrasil`);
+            let valorPrecoCamisaBrasil = temOprecoDoCamisaBrasil.value
 
-        let temOprecoDoCamisaBrasil = document.getElementById(`precoCamisaBrasil`);
-        let valorPrecoCamisaBrasil = temOprecoDoCamisaBrasil.value
+            let quantidadeCamisaBrasil = document.getElementById(`quantidadeCamisaBrasil`).value
 
-        let quantidadeCamisaBrasil = document.getElementById(`quantidadeCamisaBrasil`).value
+            if (quantidadeCamisaBrasil !== "") {
+                let valorTotalCamisaBrasil = valorPrecoCamisaBrasil * quantidadeCamisaBrasil
 
-        if (quantidadeCamisaBrasil !== "") {
-            let valorTotalCamisaBrasil = valorPrecoCamisaBrasil * quantidadeCamisaBrasil
+                alert("Sua quantidade de camisas do Brasil é $: " + valorTotalCamisaBrasil)
 
-            alert("Sua quantidade de camisas do Brasil é $: " + valorTotalCamisaBrasil)
+            } else {
+                alert(`Selecione uma quantidade para efetuar a compra`)
+            }
 
-        } else {
-            alert(`Selecione uma quantidade para efetuar a compra`)
-        }
+            let idDoCampoPreco = "precoCamisaBrasil"
+            let idDoCampoQuantidade = "quantidadeCamisaBrasil"
+            let nomeDoProduto = "Camisa do Brasil"
+            clicarComprarProduto(idDoCampoPreco, idDoCampoQuantidade, nomeDoProduto)
 
-        let idDoCampoPreco = "precoCamisaBrasil"
-        let idDoCampoQuantidade = "quantidadeCamisaBrasil"
-        let nomeDoProduto = "Camisa do Brasil"
-        clicarComprarProduto(idDoCampoPreco, idDoCampoQuantidade, nomeDoProduto)
 
+        })
+        document.getElementById(`comprarCamisaNike`).addEventListener('click', () => {
 
-    })
-    document.getElementById(`comprarCamisaNike`).addEventListener('click', () => {
+            let temOprecoDoCamisaNike = document.getElementById(`precoCamisaNike`);
+            let valorPrecoCamisaNike = temOprecoDoCamisaNike.value
 
-        let temOprecoDoCamisaNike = document.getElementById(`precoCamisaNike`);
-        let valorPrecoCamisaNike = temOprecoDoCamisaNike.value
+            let quantidadeCamisaNike = document.getElementById(`quantidadeCamisaNike`).value
 
-        let quantidadeCamisaNike = document.getElementById(`quantidadeCamisaNike`).value
+            if (quantidadeCamisaNike !== "") {
+                let valorTotalCamisaNike = valorPrecoCamisaNike * quantidadeCamisaNike
 
-        if (quantidadeCamisaNike !== "") {
-            let valorTotalCamisaNike = valorPrecoCamisaNike * quantidadeCamisaNike
+                alert("Sua quantidade de camisa da Nike é $: " + valorTotalCamisaNike)
 
-            alert("Sua quantidade de camisa da Nike é $: " + valorTotalCamisaNike)
+            } else {
+                alert(`Selecione uma quantidade para efetuar a compra`)
+            }
 
-        } else {
-            alert(`Selecione uma quantidade para efetuar a compra`)
-        }
+            let idDoCampoPreco = "precoCamisaNike"
+            let idDoCampoQuantidade = "quantidadeCamisaNike"
+            let nomeDoProduto = "Camisa Nike"
+            clicarComprarProduto(idDoCampoPreco, idDoCampoQuantidade, nomeDoProduto)
 
-        let idDoCampoPreco = "precoCamisaNike"
-        let idDoCampoQuantidade = "quantidadeCamisaNike"
-        let nomeDoProduto = "Camisa Nike"
-        clicarComprarProduto(idDoCampoPreco, idDoCampoQuantidade, nomeDoProduto)
 
+        })
+        document.getElementById(`comprarCamisaAdidas`).addEventListener('click', () => {
 
-    })
-    document.getElementById(`comprarCamisaAdidas`).addEventListener('click', () => {
+            let temOprecoDoCamisaAdidas = document.getElementById(`precoCamisaAdidas`);
+            let valorPrecoCamisaAdidas = temOprecoDoCamisaAdidas.value
 
-        let temOprecoDoCamisaAdidas = document.getElementById(`precoCamisaAdidas`);
-        let valorPrecoCamisaAdidas = temOprecoDoCamisaAdidas.value
+            let quantidadeCamisaAdidas = document.getElementById(`quantidadeCamisaAdidas`).value
 
-        let quantidadeCamisaAdidas = document.getElementById(`quantidadeCamisaAdidas`).value
+            if (quantidadeCamisaAdidas !== "") {
+                let valorTotalCamisaAdidas = valorPrecoCamisaAdidas * quantidadeCamisaAdidas
 
-        if (quantidadeCamisaAdidas !== "") {
-            let valorTotalCamisaAdidas = valorPrecoCamisaAdidas * quantidadeCamisaAdidas
+                alert("Sua quantidade de Camisa da Adidas é $: " + valorTotalCamisaAdidas)
 
-            alert("Sua quantidade de Camisa da Adidas é $: " + valorTotalCamisaAdidas)
+            } else {
+                alert(`Selecione uma quantidade para efetuar a compra`)
+            }
 
-        } else {
-            alert(`Selecione uma quantidade para efetuar a compra`)
-        }
+            let idDoCampoPreco = "precoCamisaAdidas"
+            let idDoCampoQuantidade = "quantidadeCamisaAdidas"
+            let nomeDoProduto = "Camisa Adidas"
+            clicarComprarProduto(idDoCampoPreco, idDoCampoQuantidade, nomeDoProduto)
 
-        let idDoCampoPreco = "precoCamisaAdidas"
-        let idDoCampoQuantidade = "quantidadeCamisaAdidas"
-        let nomeDoProduto = "Camisa Adidas"
-        clicarComprarProduto(idDoCampoPreco, idDoCampoQuantidade, nomeDoProduto)
 
+        })
+        document.getElementById(`comprarCamisaPsg`).addEventListener('click', () => {
 
-    })
-    document.getElementById(`comprarCamisaPsg`).addEventListener('click', () => {
+            let temOprecoDoCamisaPsg = document.getElementById(`precoCamisaPsg`);
+            let valorPrecoCamisaPsg = temOprecoDoCamisaPsg.value
 
-        let temOprecoDoCamisaPsg = document.getElementById(`precoCamisaPsg`);
-        let valorPrecoCamisaPsg = temOprecoDoCamisaPsg.value
+            let quantidadeCamisaPsg = document.getElementById(`quantidadeCamisaPsg`).value
 
-        let quantidadeCamisaPsg = document.getElementById(`quantidadeCamisaPsg`).value
+            if (quantidadeCamisaPsg !== "") {
+                let valorTotalCamisaPsg = valorPrecoCamisaPsg * quantidadeCamisaPsg
 
-        if (quantidadeCamisaPsg !== "") {
-            let valorTotalCamisaPsg = valorPrecoCamisaPsg * quantidadeCamisaPsg
+                alert("Sua quantidade de Camisa do Psg é $: " + valorTotalCamisaPsg)
 
-            alert("Sua quantidade de Camisa do Psg é $: " + valorTotalCamisaPsg)
+            } else {
+                alert(`Selecione uma quantidade para efetuar a compra`)
+            }
 
-        } else {
-            alert(`Selecione uma quantidade para efetuar a compra`)
-        }
+            let idDoCampoPreco = "precoCamisaPsg"
+            let idDoCampoQuantidade = "quantidadeCamisaPsg"
+            let nomeDoProduto = "Camisa Psg"
+            clicarComprarProduto(idDoCampoPreco, idDoCampoQuantidade, nomeDoProduto)
 
-        let idDoCampoPreco = "precoCamisaPsg"
-        let idDoCampoQuantidade = "quantidadeCamisaPsg"
-        let nomeDoProduto = "Camisa Psg"
-        clicarComprarProduto(idDoCampoPreco, idDoCampoQuantidade, nomeDoProduto)
 
+        })
+        document.getElementById(`comprarCamisaJuventus`).addEventListener('click', () => {
 
-    })
-    document.getElementById(`comprarCamisaJusventus`).addEventListener('click', () => {
+            let temOprecoDoCamisaJuventus = document.getElementById(`precoCamisaJuventus`);
+            let valorPrecoCamisaJuventus = temOprecoDoCamisaJuventus.value
 
-        let temOprecoDoCamisaJusventus = document.getElementById(`precoCamisaJusventus`);
-        let valorPrecoCamisaJusventus = temOprecoDoCamisaJusventus.value
+            let quantidadeCamisaJuventus = document.getElementById(`quantidadeCamisaJuventus`).value
 
-        let quantidadeCamisaJusventus = document.getElementById(`quantidadeCamisaJusventus`).value
+            if (quantidadeCamisaJuventus !== "") {
+                let valorTotalCamisaJuventus = valorPrecoCamisaJuventus * quantidadeCamisaJuventus
 
-        if (quantidadeCamisaJusventus !== "") {
-            let valorTotalCamisaJusventus = valorPrecoCamisaJusventus * quantidadeCamisaJusventus
+                alert("Sua quantidade de Camisa da Juventus é $: " + valorTotalCamisaJuventus)
 
-            alert("Sua quantidade de Camisa da Juventus é $: " + valorTotalCamisaJusventus)
+            } else {
+                alert(`Selecione uma quantidade para efetuar a compra`)
+            }
 
-        } else {
-            alert(`Selecione uma quantidade para efetuar a compra`)
-        }
+            let idDoCampoPreco = "precoCamisaJuventus"
+            let idDoCampoQuantidade = "quantidadeCamisaJuventus"
+            let nomeDoProduto = "Camisa Juventus"
+            clicarComprarProduto(idDoCampoPreco, idDoCampoQuantidade, nomeDoProduto)
 
-        let idDoCampoPreco = "precoCamisaJusventus"
-        let idDoCampoQuantidade = "quantidadeCamisaJusventus"
-        let nomeDoProduto = "Camisa Juventus"
-        clicarComprarProduto(idDoCampoPreco, idDoCampoQuantidade, nomeDoProduto)
 
+        })
+    }
+    Camisa();
 
-    })
-    
+    function Chuteira() {
+        document.getElementById(`comprarCamisaCorinthians`).addEventListener('click', () => {
+
+            let temOprecoDoCamisaCorinthians = document.getElementById(`precoCamisaCorinthians`);
+            let valorPrecoXaslada = temOprecoDoCamisaCorinthians.value
+
+            let quantidadeCamisaCorinthians = document.getElementById(`quantidadeCamisaCorinthians`).value
+
+            if (quantidadeCamisaCorinthians !== "") {
+                let valorTotalXasala = valorPrecoXaslada * quantidadeCamisaCorinthians
+
+                alert("Sua quantidade de Camisa do Corinthians $: " + valorTotalXasala)
+
+            } else {
+                alert(`Selecione uma quantidade para efetuar a compra`)
+            }
+            let idDoCampoPreco = "precoCamisaCorinthians"
+            let idDoCampoQuantidade = "quantidadeCamisaCorinthians"
+            let nomeDoProduto = "Camisa Corinthians"
+            clicarComprarProduto(idDoCampoPreco, idDoCampoQuantidade, nomeDoProduto)
+
+        })
+
+    }
+    Chuteira();
+
+    function Bola() {
+        document.getElementById(`comprarCamisaCorinthians`).addEventListener('click', () => {
+
+            let temOprecoDoCamisaCorinthians = document.getElementById(`precoCamisaCorinthians`);
+            let valorPrecoXaslada = temOprecoDoCamisaCorinthians.value
+
+            let quantidadeCamisaCorinthians = document.getElementById(`quantidadeCamisaCorinthians`).value
+
+            if (quantidadeCamisaCorinthians !== "") {
+                let valorTotalXasala = valorPrecoXaslada * quantidadeCamisaCorinthians
+
+                alert("Sua quantidade de Camisa do Corinthians $: " + valorTotalXasala)
+
+            } else {
+                alert(`Selecione uma quantidade para efetuar a compra`)
+            }
+            let idDoCampoPreco = "precoCamisaCorinthians"
+            let idDoCampoQuantidade = "quantidadeCamisaCorinthians"
+            let nomeDoProduto = "Camisa Corinthians"
+            clicarComprarProduto(idDoCampoPreco, idDoCampoQuantidade, nomeDoProduto)
+
+        })
+
+    }
+    Bola();
+
 
 
 }
@@ -370,4 +429,3 @@ window.onload = function () {
 
 
 
-  
