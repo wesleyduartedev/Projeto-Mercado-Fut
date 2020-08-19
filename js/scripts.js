@@ -371,56 +371,145 @@ window.onload = function () {
     Camisa();
 
     function Chuteira() {
-        document.getElementById(`comprarCamisaCorinthians`).addEventListener('click', () => {
+        document.getElementById(`comprarChuteiraNike`).addEventListener('click', () => {
 
-            let temOprecoDoCamisaCorinthians = document.getElementById(`precoCamisaCorinthians`);
-            let valorPrecoXaslada = temOprecoDoCamisaCorinthians.value
+            let temOprecoDoChuteiraNike = document.getElementById(`precoChuteiraNike`);
+            let valorPrecoChuteiraNike = temOprecoDoChuteiraNike.value
 
-            let quantidadeCamisaCorinthians = document.getElementById(`quantidadeCamisaCorinthians`).value
+            let quantidadeChuteiraNike = document.getElementById(`quantidadeChuteiraNike`).value
 
-            if (quantidadeCamisaCorinthians !== "") {
-                let valorTotalXasala = valorPrecoXaslada * quantidadeCamisaCorinthians
+            if (quantidadeChuteiraNike !== "") {
+                let valorTotalChuteiraNike = valorPrecoChuteiraNike * quantidadeChuteiraNike
 
-                alert("Sua quantidade de Camisa do Corinthians $: " + valorTotalXasala)
+                alert("Sua quantidade de chuteira Nike é $: " + valorTotalChuteiraNike)
 
             } else {
                 alert(`Selecione uma quantidade para efetuar a compra`)
             }
-            let idDoCampoPreco = "precoCamisaCorinthians"
-            let idDoCampoQuantidade = "quantidadeCamisaCorinthians"
-            let nomeDoProduto = "Camisa Corinthians"
+            let idDoCampoPreco = "precoChuteiraNike"
+            let idDoCampoQuantidade = "quantidadeChuteiraNike"
+            let nomeDoProduto = "Chuteira Nike"
             clicarComprarProduto(idDoCampoPreco, idDoCampoQuantidade, nomeDoProduto)
 
         })
+          document.getElementById(`comprarChuteiraAdidas`).addEventListener('click', () => {
+
+            let temOprecoDoChuteiraAdidas = document.getElementById(`precoChuteiraAdidas`);
+            let valorPrecoChuteiraAdidas = temOprecoDoChuteiraAdidas.value
+
+            let quantidadeChuteiraAdidas = document.getElementById(`quantidadeChuteiraAdidas`).value
+
+            if (quantidadeChuteiraAdidas !== "") {
+                let valorTotalChuteiraAdidas = valorPrecoChuteiraAdidas * quantidadeChuteiraAdidas
+
+                alert("Sua quantidade de chuteira Adidas é $: " + valorTotalChuteiraAdidas)
+
+            } else {
+                alert(`Selecione uma quantidade para efetuar a compra`)
+            }
+            let idDoCampoPreco = "precoChuteiraAdidas"
+            let idDoCampoQuantidade = "quantidadeChuteiraAdidas"
+            let nomeDoProduto = "Chuteira Adidas"
+            clicarComprarProduto(idDoCampoPreco, idDoCampoQuantidade, nomeDoProduto)
+
+        })
+        document.getElementById(`comprarChuteiraTooper`).addEventListener('click', () => {
+
+            let temOprecoDoChuteiraTooper = document.getElementById(`precoChuteiraTooper`);
+            let valorPrecoChuteiraTooper = temOprecoDoChuteiraTooper.value
+
+            let quantidadeChuteiraTooper = document.getElementById(`quantidadeChuteiraTooper`).value
+
+            if (quantidadeChuteiraTooper !== "") {
+                let valorTotalChuteiraTooper = valorPrecoChuteiraTooper * quantidadeChuteiraTooper
+
+                alert("Sua quantidade de chuteira Tooper é $: " + valorTotalChuteiraTooper)
+
+            } else {
+                alert(`Selecione uma quantidade para efetuar a compra`)
+            }
+            let idDoCampoPreco = "precoChuteiraTooper"
+            let idDoCampoQuantidade = "quantidadeChuteiraTooper"
+            let nomeDoProduto = "Chuteira Tooper"
+            clicarComprarProduto(idDoCampoPreco, idDoCampoQuantidade, nomeDoProduto)
+
+        })
+
 
     }
     Chuteira();
 
     function Bola() {
-        document.getElementById(`comprarCamisaCorinthians`).addEventListener('click', () => {
+        document.getElementById(`comprarBolaNike`).addEventListener('click', () => {
 
-            let temOprecoDoCamisaCorinthians = document.getElementById(`precoCamisaCorinthians`);
-            let valorPrecoXaslada = temOprecoDoCamisaCorinthians.value
+            let temOprecoDoBolaNike = document.getElementById(`precoBolaNike`);
+            let valorPrecoBolaNike = temOprecoDoBolaNike.value
 
-            let quantidadeCamisaCorinthians = document.getElementById(`quantidadeCamisaCorinthians`).value
+            let quantidadeBolaNike = document.getElementById(`quantidadeBolaNike`).value
 
-            if (quantidadeCamisaCorinthians !== "") {
-                let valorTotalXasala = valorPrecoXaslada * quantidadeCamisaCorinthians
+            if (quantidadeBolaNike !== "") {
+                let valorTotalBolaNike = valorPrecoBolaNike * quantidadeBolaNike
 
-                alert("Sua quantidade de Camisa do Corinthians $: " + valorTotalXasala)
+                alert("Sua quantidade de bola Nke é $: " + valorTotalBolaNike)
 
             } else {
                 alert(`Selecione uma quantidade para efetuar a compra`)
             }
-            let idDoCampoPreco = "precoCamisaCorinthians"
-            let idDoCampoQuantidade = "quantidadeCamisaCorinthians"
-            let nomeDoProduto = "Camisa Corinthians"
+            let idDoCampoPreco = "precoBolaNike"
+            let idDoCampoQuantidade = "quantidadeBolaNike"
+            let nomeDoProduto = "Bola Nike"
             clicarComprarProduto(idDoCampoPreco, idDoCampoQuantidade, nomeDoProduto)
 
         })
+        document.getElementById(`comprarBolaAdidas`).addEventListener('click', () => {
+
+            let temOprecoDoBolaAdidas = document.getElementById(`precoBolaAdidas`);
+            let valorPrecoBolaAdidas = temOprecoDoBolaAdidas.value
+
+            let quantidadeBolaAdidas = document.getElementById(`quantidadeBolaAdidas`).value
+
+            if (quantidadeBolaAdidas !== "") {
+                let valorTotalBolaAdidas = valorPrecoBolaAdidas * quantidadeBolaAdidas
+
+                alert("Sua quantidade de bola Adidas é $: " + valorTotalBolaAdidas)
+
+            } else {
+                alert(`Selecione uma quantidade para efetuar a compra`)
+            }
+            let idDoCampoPreco = "precoBolaAdidas"
+            let idDoCampoQuantidade = "quantidadeBolaAdidas"
+            let nomeDoProduto = "Bola Adidas"
+            clicarComprarProduto(idDoCampoPreco, idDoCampoQuantidade, nomeDoProduto)
+
+        })
+        document.getElementById(`comprarBolaTooper`).addEventListener('click', () => {
+
+            let temOprecoDoBolaTooper = document.getElementById(`precoBolaTooper`);
+            let valorPrecoBolaTooper = temOprecoDoBolaTooper.value
+
+            let quantidadeBolaTooper = document.getElementById(`quantidadeBolaTooper`).value
+
+            if (quantidadeBolaTooper !== "") {
+                let valorTotalBolaTooper = valorPrecoBolaTooper * quantidadeBolaTooper
+
+                alert("Sua quantidade de bola Tooper é $: " + valorTotalBolaTooper)
+
+            } else {
+                alert(`Selecione uma quantidade para efetuar a compra`)
+            }
+            let idDoCampoPreco = "precoBolaTooper"
+            let idDoCampoQuantidade = "quantidadeBolaTooper"
+            let nomeDoProduto = "Bola Tooper"
+            clicarComprarProduto(idDoCampoPreco, idDoCampoQuantidade, nomeDoProduto)
+
+        })
+      
+        
 
     }
     Bola();
+        
+    
 
 
 

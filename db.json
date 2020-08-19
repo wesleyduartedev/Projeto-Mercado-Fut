@@ -1,0 +1,25 @@
+{
+  "Camisas": [
+    {
+      "id": 1,
+      "nome": "",
+      "valor": "",
+      "quantidade": ""
+    }
+    
+  ],
+  "Chuteiras": [
+    {
+      "id": 1,
+      "nome": "",
+      "valor": "",
+      "quantidade": ""
+    }
+  ],
+  "Bolas": {
+    "id": 1,
+    "nome": "",
+    "valor": "",
+    "quantidade": ""
+  }
+}
