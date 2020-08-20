@@ -156,13 +156,29 @@ function mostrarCarrinho() {
 
 
 }
-function MostrarProdutos(){
-    let divtodosOsProdutos = document.getElementById("id");
-    
+async function MostrarProdutos() {
+    let todosOsProdutos
+    let divTodosOsProdutos = document.getElementById("todos-produtos");
+    await axios.get("http://localhost:3000/Produtos")
+        .then(response => {
+         todosOsProdutos = response.data
+        })
+console.log(todosOsProdutos.name)
+
+for(let i=0; i <todosOsProdutos.length; i++){
+    for(let j=0; j <todosOsProdutos[i].length; j++){
+        
+
+    }
+}
+
 }
 
 
+
+
 window.onload = function () {
+    MostrarProdutos()
     function Camisa() {
         document.getElementById(`comprarCamisaCorinthians`).addEventListener('click', () => {
 
@@ -392,7 +408,7 @@ window.onload = function () {
             clicarComprarProduto(idDoCampoPreco, idDoCampoQuantidade, nomeDoProduto)
 
         })
-          document.getElementById(`comprarChuteiraAdidas`).addEventListener('click', () => {
+        document.getElementById(`comprarChuteiraAdidas`).addEventListener('click', () => {
 
             let temOprecoDoChuteiraAdidas = document.getElementById(`precoChuteiraAdidas`);
             let valorPrecoChuteiraAdidas = temOprecoDoChuteiraAdidas.value
@@ -503,13 +519,13 @@ window.onload = function () {
             clicarComprarProduto(idDoCampoPreco, idDoCampoQuantidade, nomeDoProduto)
 
         })
-      
-        
+
+
 
     }
     Bola();
-        
-    
+
+
 
 
 

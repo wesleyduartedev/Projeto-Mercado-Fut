@@ -1,25 +1,100 @@
 {
-  "Camisas": [
+  "Produtos": [
     {
-      "id": 1,
-      "nome": "",
-      "valor": "",
-      "quantidade": ""
-    }
-    
-  ],
-  "Chuteiras": [
+      "Camisas": [
+        {
+          "id": "camisa1",
+          "nome": "Camisa corinthians",
+          "valor": "199.90",
+          "img": "assets/img/portfolio/camisa_corinthians.jpg"
+        },
+        {
+          "id": "camisa2",
+          "nome": "Camisa São Paulo",
+          "valor": "199.90",
+          "img": "assets/img/portfolio/camisa_saopaulo.jpg"
+        },
+        {
+          "id": "camisa3",
+          "nome": "Camisa Santos",
+          "valor": "199.90",
+          "img": "assets/img/portfolio/camisa_santos.jpg"
+        },
+        {
+          "id": "camisa4",
+          "nome": "Camisa Palmeiras",
+          "valor": "199.90",
+          "img": "assets/img/portfolio/camisa_palmeiras.jpg"
+        },
+        {
+          "id": "camisa5",
+          "nome": "Camisa Seleção Brasileiras",
+          "valor": "199.90",
+          "img": "assets/img/portfolio/camisa_brasil.jpg"
+        },
+        {
+          "id": "camisa6",
+          "nome": "Camisa Nike",
+          "valor": "199.90",
+          "img": "assets/img/portfolio/camisa_nike.jpg"
+        },
+        {
+          "id": "camisa7",
+          "nome": "Camisa Paris-st-germain",
+          "valor": "199.90",
+          "img": "assets/img/portfolio/camisa_psg.jpg"
+        },
+        {
+          "id": "camisa8",
+          "nome": "Camisa Juventos",
+          "valor": "199.90",
+          "img": "assets/img/portfolio/camisa_juventus.jpg"
+        }
+      ]
+    },
     {
-      "id": 1,
-      "nome": "",
-      "valor": "",
-      "quantidade": ""
+      "Chuteiras": [
+        {
+          "id": "chuteira1",
+          "nome": "Chuteira Nike",
+          "valor": "100.00",
+          "img": "assets/img/portfolio/chuteira_nike.jpg"
+        },
+        {
+          "id": "chuteira2",
+          "nome": "Chuteira Adidas",
+          "valor": "100.00",
+          "img": "assets/img/portfolio/chuteira_adidas.jpg"
+        },
+        {
+          "id": "chuteira3",
+          "nome": "Chuteira Puma",
+          "valor": "100.00",
+          "img": "assets/img/portfolio/chuteira_puma.jpg"
+        }
+      ]
+    },
+    {
+      "Bolas": [
+        {
+          "id": "bola1",
+          "nome": "Bola Nike",
+          "valor": "50.00",
+          "img": "assets/img/portfolio/bola_nike.jpg"
+        },
+        {
+          "id": "bola2",
+          "nome": "Bola Adidas",
+          "valor": "50.00",
+          "img": "assets/img/portfolio/bola_adidas.jpg"
+        },
+        {
+          "id": "bola3",
+          "nome": "Bola Topper",
+          "valor": "30.00",
+          "img": "assets/img/portfolio/bola_tooper.jpg"
+        }
+      ]
     }
-  ],
-  "Bolas": {
-    "id": 1,
-    "nome": "",
-    "valor": "",
-    "quantidade": ""
-  }
+  ]
 }
