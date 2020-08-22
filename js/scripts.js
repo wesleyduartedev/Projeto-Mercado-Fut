@@ -156,13 +156,99 @@ function mostrarCarrinho() {
 
 
 }
-function MostrarProdutos(){
-    let divtodosOsProdutos = document.getElementById("id");
+async function MostrarProdutos() {
+    let todosOsProdutos
+    let divTodosOsProdutos = document.getElementById("todos-produtos");
+    await axios.get("http://localhost:3000/Produtos")
+        .then(response => {
+         todosOsProdutos = response.data
+        })
+
+
+for (p of todosOsProdutos) {
+    x = todosOsProdutos[p] 
+    console.log(todosOsProdutos)
+    let divSection=document.createElement('div')
+    divSection.innerHTML=`<section class="page-section portfolio" id="${x}">
+    <div class="container">
+        <!-- Portfolio Section Heading-->
+        <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">${x}</h2>
+        <!-- Icon Divider-->
+        <div class="divider-custom">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+            <div class="divider-custom-line"></div>
+        </div>
+        <!-- Portfolio Grid Items-->
+        <div class="row">`
+        divTodosOsProdutos.appendChild(divSection)
+    for (let i=0; x.length; i++) {
+        let divProdutos = document.createElement('div')
+        divProdutos.innerHTML=`<div class="col-md-6 col-lg-4 mb-5">
+        <div class="portfolio-item mx-auto" data-toggle="modal"
+            data-target="#portifolioHistoriaCorinthians">
+            <img class="img-fluid" src="${x[i].img}"
+                alt="Imagem de capa do card" />
+            <div
+                class="portfolio-item-caption d-flex align-items-center justify-content-center h-50 w-100">
+                <div class=" text-center text-white"><i class="fas fa-plus fa-15x"></i>Click para ver a
+                    história do clube
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="card-body">
+
+            <h1 class="card-title" id="DescriçãoTitulo">
+            ${x[i].nome}
+
+                
+            </h1>
+
+            <div class="card-text">
+
+                <div id="DescriçãodoValorpProduto">
+                    <h4>
+                        Valor do Produto
+                    </h4>
+                    <a><input type="number" id="precoCamisaCorinthians" style="width: 100%" value="${x[i].valor}"
+                            disabled></a>
+                </div>
+                <button id="comprarCamisaCorinthians" class="btn btn-primary" style="width: 100%">
+                    Comprar
+                </button>
+                <div id="DescriçãoProduto">
+                    <h4>
+                        Quantidade do produto
+                    </h4>
+                    <a><input type="number" id="quantidadeCamisaCorinthians" style="width: 100%"></a>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+    </div>`
+    divTodosOsProdutos.appendChild(divProdutos)
     
+    }
+    divSection.innerHTML=` </div>
+    </div>
+</section>`
+divTodosOsProdutos.appendChild(divSection)
+
+  }
+
 }
 
 
+
+
 window.onload = function () {
+    MostrarProdutos()
     function Camisa() {
         document.getElementById(`comprarCamisaCorinthians`).addEventListener('click', () => {
 
@@ -392,7 +478,7 @@ window.onload = function () {
             clicarComprarProduto(idDoCampoPreco, idDoCampoQuantidade, nomeDoProduto)
 
         })
-          document.getElementById(`comprarChuteiraAdidas`).addEventListener('click', () => {
+        document.getElementById(`comprarChuteiraAdidas`).addEventListener('click', () => {
 
             let temOprecoDoChuteiraAdidas = document.getElementById(`precoChuteiraAdidas`);
             let valorPrecoChuteiraAdidas = temOprecoDoChuteiraAdidas.value
@@ -503,13 +589,13 @@ window.onload = function () {
             clicarComprarProduto(idDoCampoPreco, idDoCampoQuantidade, nomeDoProduto)
 
         })
-      
-        
+
+
 
     }
     Bola();
-        
-    
+
+
 
 
 
